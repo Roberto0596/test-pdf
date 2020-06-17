@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<input type="text" id="param">
+	<button id="bu" onclick="openPDF()">Clic for pdf</button>
+	<script>
+		function openPDF()
+		{
+			var parametro = document.getElementById("param").value;
+			window.open("mpdf/test/test.php?parametro="+parametro);
+		}
+
+	</script>
+</body>
+</html>
